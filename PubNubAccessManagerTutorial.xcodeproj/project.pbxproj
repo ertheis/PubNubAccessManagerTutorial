@@ -12,6 +12,7 @@
 		3D0BB739196CA57100868DF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0BB737196CA57100868DF3 /* Main.storyboard */; };
 		3D0BB73B196CA57100868DF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0BB73A196CA57100868DF3 /* Images.xcassets */; };
 		3D0BB747196CA57100868DF3 /* PubNubAccessManagerTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BB746196CA57100868DF3 /* PubNubAccessManagerTutorialTests.swift */; };
+		A69361A32D994F0C86A3D27A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A682C2C257E24D86BDDA775E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,9 @@
 		3D0BB740196CA57100868DF3 /* PubNubAccessManagerTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PubNubAccessManagerTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0BB745196CA57100868DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D0BB746196CA57100868DF3 /* PubNubAccessManagerTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubNubAccessManagerTutorialTests.swift; sourceTree = "<group>"; };
+		3D0BB750196CA5F300868DF3 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		83533E9091C14E3EADA1A4B3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		A682C2C257E24D86BDDA775E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A69361A32D994F0C86A3D27A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,8 @@
 				3D0BB730196CA57100868DF3 /* PubNubAccessManagerTutorial */,
 				3D0BB743196CA57100868DF3 /* PubNubAccessManagerTutorialTests */,
 				3D0BB72F196CA57100868DF3 /* Products */,
+				83533E9091C14E3EADA1A4B3 /* Pods.xcconfig */,
+				4074C613EEC340D387424A1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +85,7 @@
 				3D0BB733196CA57100868DF3 /* AppDelegate.swift */,
 				3D0BB735196CA57100868DF3 /* ViewController.swift */,
 				3D0BB737196CA57100868DF3 /* Main.storyboard */,
+				3D0BB750196CA5F300868DF3 /* BridgingHeader.h */,
 				3D0BB73A196CA57100868DF3 /* Images.xcassets */,
 				3D0BB731196CA57100868DF3 /* Supporting Files */,
 			);
@@ -109,6 +117,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4074C613EEC340D387424A1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A682C2C257E24D86BDDA775E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D0BB74A196CA57100868DF3 /* Build configuration list for PBXNativeTarget "PubNubAccessManagerTutorial" */;
 			buildPhases = (
+				DC06B7E9ADCC4433BCA5085E /* Check Pods Manifest.lock */,
 				3D0BB72A196CA57100868DF3 /* Sources */,
 				3D0BB72B196CA57100868DF3 /* Frameworks */,
 				3D0BB72C196CA57100868DF3 /* Resources */,
+				D902D16C097B491A81822FAF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +220,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D902D16C097B491A81822FAF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC06B7E9ADCC4433BCA5085E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3D0BB72A196CA57100868DF3 /* Sources */ = {
@@ -322,23 +373,27 @@
 		};
 		3D0BB74B196CA57100868DF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83533E9091C14E3EADA1A4B3 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PubNubAccessManagerTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = PubNubAccessManagerTutorial/BridgingHeader.h;
 			};
 			name = Debug;
 		};
 		3D0BB74C196CA57100868DF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83533E9091C14E3EADA1A4B3 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = PubNubAccessManagerTutorial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = PubNubAccessManagerTutorial/BridgingHeader.h;
 			};
 			name = Release;
 		};
@@ -395,6 +450,7 @@
 				3D0BB74C196CA57100868DF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D0BB74D196CA57100868DF3 /* Build configuration list for PBXNativeTarget "PubNubAccessManagerTutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +459,7 @@
 				3D0BB74F196CA57100868DF3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
