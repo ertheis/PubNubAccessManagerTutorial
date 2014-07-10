@@ -12,6 +12,8 @@
 		3D0BB739196CA57100868DF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0BB737196CA57100868DF3 /* Main.storyboard */; };
 		3D0BB73B196CA57100868DF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0BB73A196CA57100868DF3 /* Images.xcassets */; };
 		3D0BB747196CA57100868DF3 /* PubNubAccessManagerTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0BB746196CA57100868DF3 /* PubNubAccessManagerTutorialTests.swift */; };
+		3D2794F6196E0FAB00856218 /* serverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2794F5196E0FAB00856218 /* serverViewController.swift */; };
+		3D2794F8196E0FD800856218 /* userViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2794F7196E0FD800856218 /* userViewController.swift */; };
 		A69361A32D994F0C86A3D27A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A682C2C257E24D86BDDA775E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		3D0BB745196CA57100868DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D0BB746196CA57100868DF3 /* PubNubAccessManagerTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubNubAccessManagerTutorialTests.swift; sourceTree = "<group>"; };
 		3D0BB750196CA5F300868DF3 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		3D2794F5196E0FAB00856218 /* serverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = serverViewController.swift; sourceTree = "<group>"; };
+		3D2794F7196E0FD800856218 /* userViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userViewController.swift; sourceTree = "<group>"; };
 		83533E9091C14E3EADA1A4B3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A682C2C257E24D86BDDA775E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +88,8 @@
 			children = (
 				3D0BB733196CA57100868DF3 /* AppDelegate.swift */,
 				3D0BB735196CA57100868DF3 /* ViewController.swift */,
+				3D2794F5196E0FAB00856218 /* serverViewController.swift */,
+				3D2794F7196E0FD800856218 /* userViewController.swift */,
 				3D0BB737196CA57100868DF3 /* Main.storyboard */,
 				3D0BB750196CA5F300868DF3 /* BridgingHeader.h */,
 				3D0BB73A196CA57100868DF3 /* Images.xcassets */,
@@ -260,6 +266,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D0BB736196CA57100868DF3 /* ViewController.swift in Sources */,
+				3D2794F8196E0FD800856218 /* userViewController.swift in Sources */,
+				3D2794F6196E0FAB00856218 /* serverViewController.swift in Sources */,
 				3D0BB734196CA57100868DF3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
