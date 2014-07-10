@@ -40,7 +40,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PNDelegate {
     func applicationWillTerminate(application: UIApplication!) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+    func pubnubClient(client: PubNub!, didConnectToOrigin origin: String!) {
+        println("DELEGATE: Connected to origin \(origin)")
+    }
 }
 
