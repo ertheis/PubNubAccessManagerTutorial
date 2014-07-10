@@ -44,5 +44,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PNDelegate {
     func pubnubClient(client: PubNub!, didConnectToOrigin origin: String!) {
         println("DELEGATE: Connected to origin \(origin)")
     }
+    
+    func pubnubClient(client: PubNub!, didChangeAccessRights accessRightsCollection: PNAccessRightsCollection!) {
+        println("DELEGATE Access Rights: changed access rights configuration: \(accessRightsCollection)")
+    }
+    
+    func pubnubClient(client: PubNub!, accessRightsChangeDidFailWithError error: PNError!) {
+        println("DELEGATE Access Rights: error: \(error)")
+    }
+    
+    func pubnubClient(client: PubNub!, didAuditAccessRights accessRightsCollection: PNAccessRightsCollection!) {
+        println("DELEGATE Access Rights: completed access rights audit: \(accessRightsCollection)")
+    }
+    
+    func pubnubClient(client: PubNub!, accessRightsAuditDidFailWithError error: PNError!)  {
+        println("DELEGATE Access Rights: error: \(error)")
+    }
 }
 

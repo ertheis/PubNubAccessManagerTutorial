@@ -12,7 +12,7 @@ class serverViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var myConfig = PNConfiguration(forOrigin: "pubsub.pubnub.com", publishKey: "demo", subscribeKey: "demo", secretKey: nil, authorizationKey: "my_auth_key")
+        var myConfig = PNConfiguration(forOrigin: "pubsub.pubnub.com", publishKey: "pam", subscribeKey: "pam", secretKey: "pam")
         
         PubNub.setConfiguration(myConfig)
         PubNub.connect()
